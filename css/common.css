@@ -1,6 +1,6 @@
 :root {
-  --bg: #eef1f6; --surface: #ffffff; --ink: #1b2433; --muted: #6b7587;
-  --line: #dde2ec; --accent: #3b4cca; --accent-soft: #e6e9fb; --ok: #1f8a5b; --wait: #b7791f;
+  --bg: #f3f4f8; --surface: #ffffff; --ink: #1b2433; --muted: #6b7587;
+  --line: #dde2ec; --accent: #4f46e5; --accent-soft: #eceafd; --ok: #1f8a5b; --wait: #b7791f;
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Segoe UI", system-ui, -apple-system, sans-serif; line-height: 1.5; }
