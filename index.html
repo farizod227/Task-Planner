@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Планировщик — Task Planner</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/planner.css">
+</head>
+<body>
+  <header class="site-header"><a class="logo" href="index.html">Task Planner</a><nav><a href="index.html" class="active">Планировщик</a><a href="stats.html">Статистика</a></nav><button id="randomBtn" class="btn">🎲 Случайная задача</button></header>
+  <main class="container">
+    <section class="progress">
+      <p id="progressText">Загрузка…</p>
+      <div class="bar"><div id="progressFill" class="fill"></div></div>
+    </section>
+    <div class="toolbar">
+      <div class="tabs">
+        <button class="tab active" data-filter="all">Все (<span id="cntAll">0</span>)</button>
+        <button class="tab" data-filter="active">Активные (<span id="cntActive">0</span>)</button>
+        <button class="tab" data-filter="completed">Выполненные (<span id="cntCompleted">0</span>)</button>
+      </div>
+      <input id="search" type="search" placeholder="Поиск по задачам" autocomplete="off">
+    </div>
+    <div id="list" class="list"></div>
+    <p id="shown" class="shown"></p>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+</html>
