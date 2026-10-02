@@ -5,7 +5,8 @@
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Segoe UI", system-ui, -apple-system, sans-serif; line-height: 1.5; }
 .site-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 28px max(20px, calc((100% - 840px) / 2)) 0; flex-wrap: wrap; }
-.logo { font-weight: 700; font-size: 20px; color: var(--ink); text-decoration: none; }
+.logo { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 20px; color: var(--ink); text-decoration: none; }
+.logo::before { content: "✓"; flex: none; width: 32px; height: 32px; border-radius: 8px; background: var(--accent); color: #fff; font-size: 18px; display: grid; place-items: center; }
 .site-header nav { display: flex; gap: 6px; }
 .site-header nav a { color: var(--muted); text-decoration: none; padding: 6px 14px; border-radius: 8px; font-size: 14px; font-weight: 600; }
 .site-header nav a:hover { color: var(--ink); }
