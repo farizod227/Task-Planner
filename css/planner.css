@@ -3,8 +3,8 @@
 .progress .bar { height: 12px; }
 .toolbar { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
 .tabs { display: flex; gap: 6px; flex-wrap: wrap; }
-.tab { border: 1px solid var(--line); background: var(--surface); padding: 8px 14px; border-radius: 8px; font: inherit; cursor: pointer; }
-.tab.active { background: var(--ink); border-color: var(--ink); color: #fff; }
+.tab { border: 1px solid var(--line); background: var(--surface); padding: 8px 16px; border-radius: 10px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+.tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 #search { flex: 1; min-width: 200px; padding: 8px 14px; border: 1px solid var(--line); border-radius: 8px; font: inherit; }
 .add-form { display: flex; gap: 8px; margin-bottom: 14px; }
 #newTodo { flex: 1; min-width: 0; padding: 8px 14px; border: 1px solid var(--line); border-radius: 8px; font: inherit; }
