@@ -51,8 +51,8 @@ function updateProgress() {
   const done = todos.filter(t => t.completed).length;
   const percent = todos.length ? Math.round((done / todos.length) * 100) : 0;
   document.getElementById('progressFill').style.width = percent + '%';
-  document.getElementById('progressText').textContent =
-    'Выполнено ' + percent + '% (' + done + ' из ' + todos.length + ')';
+  document.getElementById('progressText').innerHTML =
+    'Выполнено <span class="percent">' + percent + '%</span> <span class="count">(' + done + ' из ' + todos.length + ')</span>';
 }
 
 function toggleTodo(id) {
