@@ -60,6 +60,16 @@ function toggleTodo(id) {
   render();
 }
 
+// Своя задача добавляется в начало списка
+function addTodo(text) {
+  let maxId = 0;
+  for (let i = 0; i < todos.length; i++) {
+    if (todos[i].id > maxId) maxId = todos[i].id;
+  }
+  todos.unshift({ id: maxId + 1, todo: text, completed: false, userId: 0 });
+  render();
+}
+
 function render() {
   renderList(getFilteredTodos());
   updateCounters();
