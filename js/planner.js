@@ -71,6 +71,14 @@ function addTodo(text) {
   render();
 }
 
+// Удаление по «×»; stopPropagation — чтобы клик не отметил задачу
+function deleteTodo(event, id) {
+  event.stopPropagation();
+  const index = todos.findIndex(t => t.id === id);
+  todos.splice(index, 1);
+  render();
+}
+
 function render() {
   renderList(getFilteredTodos());
   updateCounters();
