@@ -32,6 +32,7 @@ function renderList(items) {
           <span class="check"></span>
           <p>${escapeHtml(task.todo)}</p>
           <span class="user">${task.userId === 0 ? 'Моя задача' : 'User ' + task.userId}</span>
+          <button class="del" onclick="deleteTodo(event, ${task.id})" aria-label="Удалить задачу">×</button>
         </div>`;
     }
     list.innerHTML = html;
