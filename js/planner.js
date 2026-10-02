@@ -87,6 +87,14 @@ document.getElementById('search').addEventListener('input', function (e) {
   state.query = e.target.value.trim();
   render();
 });
+document.getElementById('addForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const input = document.getElementById('newTodo');
+  const text = input.value.trim();
+  if (text === '') return;
+  addTodo(text);
+  input.value = '';
+});
 
 loadTodos()
   .then(function () { render(); })
