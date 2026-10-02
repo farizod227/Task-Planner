@@ -1,11 +1,11 @@
 .progress { background: var(--surface); padding: 18px 20px; border-radius: 12px; margin-bottom: 18px; }
 .progress p { margin: 0 0 10px; font-weight: 600; }
 .progress .bar { height: 12px; }
-.toolbar { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+.toolbar { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
 .tabs { display: flex; gap: 6px; flex-wrap: wrap; }
 .tab { border: 1px solid var(--line); background: var(--surface); padding: 8px 16px; border-radius: 10px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
 .tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
-#search { flex: 1; min-width: 200px; padding: 8px 14px; border: 1px solid var(--line); border-radius: 8px; font: inherit; }
+#search { flex: 0 1 300px; min-width: 200px; padding: 8px 14px 8px 38px; border: 1px solid var(--line); border-radius: 10px; font: inherit; font-size: 14px; background: var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7587' stroke-width='2.5' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-4-4'/%3E%3C/svg%3E") no-repeat 14px center; }
 .add-form { display: flex; gap: 8px; margin-bottom: 14px; }
 #newTodo { flex: 1; min-width: 0; padding: 8px 14px; border: 1px solid var(--line); border-radius: 8px; font: inherit; }
 .add-btn { border: 0; background: var(--accent); color: #fff; padding: 8px 18px; border-radius: 8px; font: inherit; font-weight: 600; cursor: pointer; }
