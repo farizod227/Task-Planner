@@ -31,7 +31,7 @@ function renderList(items) {
         <div class="task ${task.completed ? 'done' : ''}" onclick="toggleTodo(${task.id})">
           <span class="check"></span>
           <p>${escapeHtml(task.todo)}</p>
-          <span class="user">User ${task.userId}</span>
+          <span class="user">${task.userId === 0 ? 'Моя задача' : 'User ' + task.userId}</span>
         </div>`;
     }
     list.innerHTML = html;
