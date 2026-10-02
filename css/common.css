@@ -18,7 +18,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Segoe 
 .bar { height: 10px; background: var(--line); border-radius: 999px; overflow: hidden; }
 .fill { height: 100%; background: var(--accent); border-radius: 999px; transition: width .3s; }
 .check { flex: none; width: 22px; height: 22px; border: 2px solid #aab3c5; border-radius: 50%; display: inline-block; position: relative; }
-.done .check { background: var(--ok); border-color: var(--ok); }
+.done .check { background: var(--accent); border-color: var(--accent); }
 .done .check::after { content: "✓"; color: #fff; font-size: 14px; position: absolute; inset: 0; text-align: center; line-height: 18px; }
 .done p { color: var(--muted); text-decoration: line-through; }
 .hint, .empty { color: var(--muted); text-align: center; padding: 24px; }
