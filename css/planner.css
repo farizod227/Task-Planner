@@ -1,0 +1,14 @@
+.progress { background: var(--surface); padding: 18px 20px; border-radius: 12px; margin-bottom: 18px; }
+.progress p { margin: 0 0 10px; font-weight: 600; }
+.progress .bar { height: 12px; }
+.toolbar { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+.tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+.tab { border: 1px solid var(--line); background: var(--surface); padding: 8px 14px; border-radius: 8px; font: inherit; cursor: pointer; }
+.tab.active { background: var(--ink); border-color: var(--ink); color: #fff; }
+#search { flex: 1; min-width: 200px; padding: 8px 14px; border: 1px solid var(--line); border-radius: 8px; font: inherit; }
+.list { display: flex; flex-direction: column; gap: 8px; }
+.task { display: flex; align-items: center; gap: 14px; background: var(--surface); padding: 12px 16px; border-radius: 10px; cursor: pointer; border: 1px solid transparent; }
+.task:hover { border-color: var(--accent); }
+.task p { margin: 0; flex: 1; }
+.user { font-size: 13px; color: var(--accent); background: var(--accent-soft); padding: 2px 10px; border-radius: 999px; white-space: nowrap; }
+.shown { color: var(--muted); font-size: 14px; margin-top: 14px; }
